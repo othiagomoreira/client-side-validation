@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #9b59b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1.5rem;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form {
+    padding: 1.5rem 2rem;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.form-control label  {
+    display: inline-block;
+    margin-bottom: .25rem;
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: .25rem;
+    font-family: inherit;
+    font-size: .9rem;
+    padding: .5rem;
+}
+
+.form-control.sucess input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 2.5rem;
+    right: .75rem;
+    font-size: 1.3rem;
+}
+
+.form-control.sucess .icon-check {
+    color: #2ecc71;
+    visibility: visible;
+} 
+
+.form-control.error .icon-error {
+    color: #e74c3c;
+    visibility: visible;
+} 
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: .25rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+}
